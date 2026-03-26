@@ -681,7 +681,17 @@ export default function Home() {
           fontWeight: 900,
           boxShadow: "0 18px 30px rgba(37,211,102,0.35)",
           zIndex: 1000,
-        }}
+        }}<h2 style={{ marginTop: "60px" }}>Our Work</h2>
+
+<div style={{
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+  gap: "15px"
+}}>
+  <img src="/work1.jpg" style={{ width: "100%", borderRadius: "10px" }} />
+  <img src="/work2.jpg" style={{ width: "100%", borderRadius: "10px" }} />
+  <img src="/work3.jpg" style={{ width: "100%", borderRadius: "10px" }} />
+</div>
       >
         💬 WhatsApp
       </a>
