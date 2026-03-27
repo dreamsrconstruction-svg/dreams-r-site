@@ -18,6 +18,17 @@
     --foreground: #ededed;
   }
 }
+body {
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--background);
