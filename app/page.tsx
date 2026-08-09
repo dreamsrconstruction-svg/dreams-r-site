@@ -13,11 +13,7 @@ const services = [
     desc: "Deep cleaning, move-out cleaning, residential, and commercial cleaning.",
     image: "/service2.jpg",
   },
-  {
-    title: "Landscaping",
-    desc: "Outdoor cleanup, lawn care, yard improvement, and seasonal property maintenance.",
-    image: "/service3.jpg",
-  },
+ 
 ];
 
 const galleryImages = [
