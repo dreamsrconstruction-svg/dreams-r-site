@@ -175,7 +175,7 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section id="gallery" className="bg-zinc-950 py-20">
+    <section id="gallery" className="bg-zinc-950 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 text-center">
             <p className="mb-2 text-sm uppercase tracking-[0.25em] text-blue-400">
@@ -194,12 +194,23 @@ export default function Home() {
                 className="group overflow-hidden rounded-3xl border border-white/10 bg-black shadow-xl"
               >
                 <div className="relative h-80 w-full">
-                  <Image
-                    src={src}
-                    alt={`Work image ${index + 1}`}
-                    fill
-                    className="object-cover transition duration-700 group-hover:scale-110 group-hover:brightness-110"
-                  />
+                  {isVideoSrc(src) ? (
+                    <video
+                      src={src}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-110 group-hover:brightness-110"
+                    />
+                  ) : (
+                    <Image
+                      src={src}
+                      alt={`Work image ${index + 1}`}
+                      fill
+                      className="object-cover transition duration-700 group-hover:scale-110 group-hover:brightness-110"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent opacity-90" />
                 </div>
               </div>
@@ -207,7 +218,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+     
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="rounded-3xl border border-blue-500/20 bg-gradient-to-r from-blue-950/40 to-zinc-900 p-10 text-center shadow-2xl">
