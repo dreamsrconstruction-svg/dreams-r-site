@@ -13,7 +13,11 @@ const services = [
     desc: "Deep cleaning, move-out cleaning, residential, and commercial cleaning.",
     image: "/service2.jpg",
   },
- 
+  {
+    title: "Caulking Services",
+    desc: "Residential caulking for windows, walls, and anywhere else that needs a clean, lasting seal.",
+    image: "/service4.jpg",
+  },
 ];
 
 const galleryImages = [
