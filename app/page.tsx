@@ -19,11 +19,13 @@ const services = [
     image: "/service4.jpg",
   },
 ];
-
+function isVideoSrc(src: string) {
+  return /\.(mp4|webm|mov)$/i.test(src);
+}
 const galleryImages = [
   "/work1.jpg",
   "/work2.jpg",
-  "/work3.jpg",
+  "/work3.mp4",
   "/work4.jpg",
   "/work5.jpg",
   "/work6.jpg",
