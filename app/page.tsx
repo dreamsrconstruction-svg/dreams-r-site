@@ -101,8 +101,11 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-base text-gray-200 md:text-xl">
-              Drywall, taping, mudding, cleaning, and landscaping services with
-              detail, quality, and a premium finish for homes and businesses.
+              Profesional Drywall, Finishing & Property Services in Calgary
+
+              Drywall installation, taping, repairs, caulking, cleaning and more for residential and comercial properties.
+
+              Quality workmanship. Clean job sites. Realiable services.
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
